@@ -23,7 +23,8 @@ against a home inspector's drone photos of real roofs. No photos are included in
 
 ## Quick start
 
-1. Open `FloridaRoofs/Maps/Showcase` to see every covering and kit piece.
+1. Open `FloridaRoofs/Maps/Showcase` to see the pack on a street of houses, and
+   `FloridaRoofs/Maps/Overview` to see every covering and kit piece laid out.
 2. Drag a material instance onto your roof mesh, for example
    `MI_ShingleArch_WeatheredGray_Fair`.
 3. If your roof's UVs are not laid out in metres (most aren't), open the instance and
@@ -54,7 +55,7 @@ wear: `_Good`, `_Fair`, `_Worn`. All textures are 2048 px and tile seamlessly.
 
 ### Roof kit
 
-Static meshes for everything that sits on or caps a roof: ridge and hip caps, ridge vents,
+In `Meshes/RoofKit`: static meshes for everything that sits on or caps a roof: ridge and hip caps, ridge vents,
 plumbing stacks, exhaust hoods, off-ridge and turtle vents, chimneys with crickets, tile
 ridge / hip / rake caps with mortar, roof-to-wall flashing, lead pans and tile vents, and
 metal ridge, hip, rake and eave trim with boots and flues. Most pieces come at 4, 5, 6, 7
@@ -62,13 +63,13 @@ and 8 in 12 (metal trim 3-8 in 12); the pitch is the `_P<n>` at the end of the n
 
 ### Example roofs
 
-In `Meshes`: a gable, a hip with deliberately wrong UVs (to show WorldAligned), a standing
+In `Meshes/ExampleRoofs`: a gable, a hip with deliberately wrong UVs (to show WorldAligned), a standing
 seam hip roof, two manufactured-home roof-overs, and cross-gable tile roofs at 6 in 12
 with cut tile valleys in each tile profile (`SM_ExampleValley`, `SM_ExampleValleyClose`,
 `SM_ExampleValleyFlat`; each with its `Band` of cut tiles and its `Ridge`). Each comes with
 the materials it wears in the demo maps.
 
-In `Meshes/Showcase`: the showcase houses, including two L-plan houses with a gable wing
+In `Demo/Meshes`: the showcase houses, including two L-plan houses with a gable wing
 over the garage: a shingle one with closed-cut valleys (the wing's shingles run through
 the valley, the main roof's are cut along it) and a barrel tile one with cut tile valleys
 over W valley pans, its wing ridge teed into the main ridge.
